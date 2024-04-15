@@ -178,10 +178,10 @@ def question8():
     answers = {}
 
     # type: eval_float
-    answers['(a) precision for C0'] = None
+    answers['(a) precision for C0'] = "0.1 * p"
 
     # type: eval_float
-    answers['(a) recall for C0'] = None
+    answers['(a) recall for C0'] = "1 * p"
 
     # type: eval_float
     answers['(b) F-measure of C0'] = "2 * ((0.1 * p) / (0.1 + p))"
@@ -204,18 +204,18 @@ def question9():
 
     # type: dict[string,float]
     # keys: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) metrics'] = None
+    answers['(i) metrics'] = : {'recall': 0.5333, 'precision': 0.6154, 'F-measure': 0.5714,'accuracy': 0.88 }
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) best metric?'] = None
+    answers['(i) best metric?'] = 'precision'
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) worst metric?'] = None
+    answers['(i) worst metric?'] = 'accuracy'
 
     # type: explain_string
-    answers['(ii) Explain your choices of best and worst metrics'] = None
+    answers['(ii) Explain your choices of best and worst metrics'] = "Accuracy is misleading in imbalanced datasets, while F-measure provides a more reliable performance indicator by balancing precision and recall."
     return answers
 
 
