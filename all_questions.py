@@ -54,11 +54,11 @@ def question2():
     # The formulas should only use the variable 'p'. The formulas should be
     # a valid Python expression. Use the functions in the math module as
     # required.
-    answers['(c) Weight update'] = None
+    answers['(c) Weight update'] = "0.424p"
 
     # type: float
     # the answer should be correct to 3 significant digits
-    answers['(d) Weight influence'] = None
+    answers['(d) Weight influence'] = 1.528
     return answers
 
 
