@@ -67,10 +67,10 @@ def question3():
     answers = {}
 
     # type: string
-    answers['Agree?'] = None
+    answers['Agree?'] = "Disagree"
 
     # type: explain_string
-    answers['Explain'] = None
+    answers['Explain'] = "Random guessing, such as flipping a coin, is not useful for making predictions and does not constitute a valid ensemble method for stock market prediction."
     return answers
 
 
