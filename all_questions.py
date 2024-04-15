@@ -117,32 +117,33 @@ def question6():
     answers = {}
 
     # type: eval_float
-    answers['(a) C1-TPR'] = None
+    answers['(a) C1-TPR'] = "p"
 
     # type: eval_float
-    answers['(a) C2-TPR'] = None
+    answers['(a) C2-TPR'] = "2p"
 
     # type: eval_float
-    answers['(a) C1-FPR'] = None
+    answers['(a) C1-FPR'] = "p"
 
     # type: eval_float
-    answers['(a) C2-FPR'] = None
+    answers['(a) C2-FPR'] = "2p"
 
     # type: string
     # Hint: The random guess line in an ROC curve corresponds to TPR=FPR.
     # choices: ['yes', 'no']
-    answers['(b) C2 better classifier than C1?'] = None
+    answers['(b) C2 better classifier than C1?'] = 'no'
 
     # type: explain_string
-    answers['(b) C2 better classifier than C1? Explain'] = None
+    answers['(b) C2 better classifier than C1? Explain'] = "increasing the prediction probability to (2p ) does not confer any advantage to C2; it simply means that C2 will predict more positive classes, both true positives and false positives, but does not improve the classifier's accuracy or its ability to discriminate between the classes better than random guessing."
 
     # type: string
     # choices: ['TPR/FPR', 'precision/recall']
-    answers['(c) Which metric?'] = None
+    answers['(c) Which metric?'] = 'TPR/FPR'
 
     # type: explain_string
-    answers['(c) explain'] = None
+    answers['(c) explain'] = "While C2 seems to have better recall, its equal precision and higher false positive rate indicate that it doesn't actually outperform C1; both classifiers appear equally effective (or ineffective) as random guessers."
     return answers
+
 
 
 #-----------------------------------------------------------
