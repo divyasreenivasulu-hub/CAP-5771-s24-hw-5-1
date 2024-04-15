@@ -152,24 +152,24 @@ def question7():
 
     # type: string
     # choices: ['C1', 'C2', 'None']
-    answers['(i) Best classifier?'] = None
+    answers['(i) Best classifier?'] = 'C2'
 
     # type: explain_string
-    answers['(i) Best classifier, explain'] = None
+    answers['(i) Best classifier, explain'] = " C2 has a higher recall and F1-measure than C1 but also a higher FPR, indicating a more aggressive classifier that catches more positives"
 
     # type: string
     # choices: ['TPR-FPR', 'precision-recall-F1-Measure']
-    answers['(ii) appropriate metric pair'] = None
+    answers['(ii) appropriate metric pair'] = 'precision-recall-F1-Measure'
 
     # type: explain_string
-    answers['(ii) appropriate metric pair, explain'] = None
+    answers['(ii) appropriate metric pair, explain'] = "The {precision, recall, F1-measure} metric pair is more informative for evaluating C1 and C2 as it balances the importance of correctly predicting positives and minimizing incorrect positive predictions in imbalanced datasets."
 
     # type: string
     # choices: ['C1', 'C2', 'C3']
-    answers['(iii) preferred classifier?'] = None
+    answers['(iii) preferred classifier?'] = 'C3'
 
     # type: explain_string
-    answers['(iii) best classifier, explain'] = None
+    answers['(iii) best classifier, explain'] = "C3 is preferable for its high precision and low false positive rate, making it ideal when accurate positive predictions are critical and false positives are costly."
     return answers
 
 
