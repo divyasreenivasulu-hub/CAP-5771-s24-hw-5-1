@@ -184,11 +184,11 @@ def question8():
     answers['(a) recall for C0'] = None
 
     # type: eval_float
-    answers['(b) F-measure of C0'] = None
+    answers['(b) F-measure of C0'] = "2 * ((0.1 * p) / (0.1 + p))"
 
     # type: string
     # choices: ['yes', 'no', 'unknown']
-    answers['C1 better than random?'] = None
+    answers['C1 better than random?'] = 'yes'
 
     # type: float
     # What is the range of p for which C1 is better than random?  What is
